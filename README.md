@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add New badge for unread notifications
+## feat: add Refresh button on display page
 
-Commit #16
+Commit #17
