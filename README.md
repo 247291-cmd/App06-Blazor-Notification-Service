@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: implement Compact view mode
+## feat: implement Detailed view mode with timestamps
 
-Commit #14
+Commit #15
