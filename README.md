@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add NotificationService class
+## feat: add GetNotificationsAsync method
 
-Commit #5
+Commit #6
