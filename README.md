@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: implement Detailed view mode with timestamps
+## feat: add New badge for unread notifications
 
-Commit #15
+Commit #16
