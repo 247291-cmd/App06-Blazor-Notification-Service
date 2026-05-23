@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## style: add left border accent for unread items
+## feat: add NavMenu with Settings and Notifications links
 
-Commit #21
+Commit #22
