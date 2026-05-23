@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## style: add purple gradient background
+## style: add card style for each notification
 
-Commit #19
+Commit #20
