@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add NotificationDisplay page
+## feat: implement Compact view mode
 
-Commit #13
+Commit #14
