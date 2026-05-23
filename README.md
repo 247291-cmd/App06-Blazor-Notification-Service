@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## chore: add gitignore
+## docs: add README for App06
 
-Commit #25
+Commit #26
