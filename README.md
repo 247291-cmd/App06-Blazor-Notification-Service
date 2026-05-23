@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add range slider for notification count
+## feat: add Compact and Detailed style selector
 
-Commit #11
+Commit #12
