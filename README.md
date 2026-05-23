@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add NotificationSettings page
+## feat: add range slider for notification count
 
-Commit #10
+Commit #11
