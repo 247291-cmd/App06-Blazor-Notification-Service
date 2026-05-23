@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add DefaultNumberOfNotifications property
+## feat: add NotificationStyle property Compact or Detailed
 
-Commit #3
+Commit #4
