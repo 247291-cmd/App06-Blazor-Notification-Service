@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add NotificationStyle property Compact or Detailed
+## feat: add NotificationService class
 
-Commit #4
+Commit #5
