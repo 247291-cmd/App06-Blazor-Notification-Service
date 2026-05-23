@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add Refresh button on display page
+## feat: add loading spinner
 
-Commit #17
+Commit #18
