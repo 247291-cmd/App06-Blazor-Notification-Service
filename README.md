@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: inject NotificationConfig into NotificationService
+## feat: register NotificationConfig as singleton
 
-Commit #7
+Commit #8
