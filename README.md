@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add NavMenu with Settings and Notifications links
+## style: dynamic style switching between Compact and Detailed
 
-Commit #22
+Commit #23
