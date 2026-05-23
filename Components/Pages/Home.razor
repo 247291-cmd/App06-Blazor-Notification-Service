@@ -1,0 +1,69 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject App06_Notifications.Services.NotificationConfig Config
+
+<PageTitle>Notification Settings</PageTitle>
+
+<div class="min-vh-100" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+
+                <div class="text-center mb-4">
+                    <h2 class="text-white fw-bold">⚙️ Notification Settings</h2>
+                    <p class="text-white opacity-75">Configure your preferences</p>
+                </div>
+
+                <div class="card border-0 shadow-lg" style="border-radius:20px;">
+                    <div class="card-body p-4">
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <label class="fw-semibold text-muted small text-uppercase">Number of Notifications</label>
+                                <span class="badge rounded-pill px-3 py-2 text-white fw-bold"
+                                      style="background:linear-gradient(135deg,#a18cd1,#fbc2eb);">
+                                    @Config.DefaultNumberOfNotifications
+                                </span>
+                            </div>
+                            <input type="range" class="form-range" min="1" max="10"
+                                   @bind="Config.DefaultNumberOfNotifications" @bind:event="oninput" />
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>1</span><span>5</span><span>10</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="fw-semibold text-muted small text-uppercase mb-3 d-block">Display Style</label>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="p-3 rounded-3 text-center cursor-pointer border-2"
+                                         style="cursor:pointer; border: 2px solid @(Config.NotificationStyle == "Compact" ? "#a18cd1" : "#e9ecef"); background: @(Config.NotificationStyle == "Compact" ? "rgba(161,140,209,0.1)" : "white");"
+                                         @onclick="@(() => Config.NotificationStyle = "Compact")">
+                                        <div style="font-size:1.5rem;">📦</div>
+                                        <div class="fw-semibold small mt-1">Compact</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 rounded-3 text-center cursor-pointer"
+                                         style="cursor:pointer; border: 2px solid @(Config.NotificationStyle == "Detailed" ? "#a18cd1" : "#e9ecef"); background: @(Config.NotificationStyle == "Detailed" ? "rgba(161,140,209,0.1)" : "white");"
+                                         @onclick="@(() => Config.NotificationStyle = "Detailed")">
+                                        <div style="font-size:1.5rem;">📋</div>
+                                        <div class="fw-semibold small mt-1">Detailed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="/notifications" class="btn btn-lg w-100 fw-bold text-white py-3"
+                           style="border-radius:12px; background:linear-gradient(135deg,#a18cd1,#fbc2eb); border:none;">
+                            View Notifications →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@code { }
