@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## style: add card style for each notification
+## style: add left border accent for unread items
 
-Commit #20
+Commit #21
