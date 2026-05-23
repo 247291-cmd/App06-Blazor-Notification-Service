@@ -7,77 +7,51 @@
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-md-7 col-lg-6">
-
             <div class="text-center mb-4">
-                <h2 class="fw-bold text-dark">App 06 - Notification Service</h2>
-                <p class="text-muted">Configurable Service with Dependency Injection</p>
+                <h2 class="fw-bold text-dark">Notification Settings</h2>
+                <p class="text-muted">Configure your notification preferences</p>
             </div>
-
             <div class="card border-0 shadow" style="border-radius:16px;">
                 <div class="card-header py-3 px-4 text-white fw-bold" style="background:#0891b2; border-radius:16px 16px 0 0;">
-                    ⚙️ Notification Settings
+                    Settings
                 </div>
                 <div class="card-body p-4">
-
                     <div class="mb-4">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <label class="form-label fw-semibold text-dark mb-0">
-                                Default Number of Notifications
-                            </label>
-                            <span class="badge rounded-pill px-3 py-2 text-white fw-bold" style="background:#0891b2;">
-                                @Config.DefaultNumberOfNotifications
-                            </span>
+                            <label class="form-label fw-semibold text-dark mb-0">Number of Notifications</label>
+                            <span class="badge px-3 py-2 text-white fw-bold" style="background:#0891b2;">@Config.DefaultNumberOfNotifications</span>
                         </div>
                         <input type="range" class="form-range" min="1" max="10"
-                               @bind="Config.DefaultNumberOfNotifications"
-                               @bind:event="oninput" />
-                        <div class="d-flex justify-content-between small text-muted">
-                            <span>1</span><span>5</span><span>10</span>
-                        </div>
+                               @bind="Config.DefaultNumberOfNotifications" @bind:event="oninput" />
+                        <div class="d-flex justify-content-between small text-muted"><span>1</span><span>5</span><span>10</span></div>
                     </div>
-
                     <div class="mb-4">
-                        <label class="form-label fw-semibold text-dark mb-3">Notification Style</label>
+                        <label class="form-label fw-semibold text-dark mb-3">Display Style</label>
                         <div class="row g-3">
                             <div class="col-6">
-                                <div class="p-3 rounded-3 text-center border-2 cursor-pointer"
-                                     style="cursor:pointer; border: 2px solid @(Config.NotificationStyle == "Compact" ? "#0891b2" : "#e5e7eb"); background: @(Config.NotificationStyle == "Compact" ? "#ecfeff" : "white");"
+                                <div class="p-3 rounded-3 text-center"
+                                     style="cursor:pointer; border:2px solid @(Config.NotificationStyle == "Compact" ? "#0891b2" : "#e5e7eb"); background:@(Config.NotificationStyle == "Compact" ? "#ecfeff" : "white");"
                                      @onclick="@(() => Config.NotificationStyle = "Compact")">
-                                    <div class="fw-bold text-dark" style="font-size:1.5rem;">📦</div>
+                                    <div style="font-size:1.5rem;">📦</div>
                                     <div class="fw-semibold text-dark small mt-1">Compact</div>
-                                    <div class="text-muted" style="font-size:0.7rem;">Simple list view</div>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="p-3 rounded-3 text-center"
-                                     style="cursor:pointer; border: 2px solid @(Config.NotificationStyle == "Detailed" ? "#0891b2" : "#e5e7eb"); background: @(Config.NotificationStyle == "Detailed" ? "#ecfeff" : "white");"
+                                     style="cursor:pointer; border:2px solid @(Config.NotificationStyle == "Detailed" ? "#0891b2" : "#e5e7eb"); background:@(Config.NotificationStyle == "Detailed" ? "#ecfeff" : "white");"
                                      @onclick="@(() => Config.NotificationStyle = "Detailed")">
-                                    <div class="fw-bold text-dark" style="font-size:1.5rem;">📋</div>
+                                    <div style="font-size:1.5rem;">📋</div>
                                     <div class="fw-semibold text-dark small mt-1">Detailed</div>
-                                    <div class="text-muted" style="font-size:0.7rem;">With timestamps</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <a href="/notifications" class="btn btn-lg w-100 fw-bold text-white py-3"
                        style="background:#0891b2; border:none; border-radius:10px;">
                         View Notifications →
                     </a>
                 </div>
             </div>
-
-            <div class="card mt-4 border-0 shadow-sm" style="border-radius:16px; background:#f0f9ff;">
-                <div class="card-body p-4">
-                    <h6 class="fw-bold text-dark mb-3">Dependency Injection Explained</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2 text-dark small"><span class="badge bg-primary me-2">NotificationConfig</span>Singleton — same instance shared across all components</li>
-                        <li class="mb-2 text-dark small"><span class="badge bg-success me-2">NotificationService</span>Receives Config via constructor injection</li>
-                        <li class="text-dark small"><span class="badge bg-warning text-dark me-2">GetNotificationsAsync()</span>Uses Config.DefaultNumberOfNotifications unless overridden</li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
     </div>
 </div>
