@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add GetNotificationsAsync method
+## feat: inject NotificationConfig into NotificationService
 
-Commit #6
+Commit #7
