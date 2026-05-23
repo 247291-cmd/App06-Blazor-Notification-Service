@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## fix: settings changes reflect immediately on display page
+## chore: add gitignore
 
-Commit #24
+Commit #25
