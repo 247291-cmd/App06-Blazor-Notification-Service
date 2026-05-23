@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## style: dynamic style switching between Compact and Detailed
+## fix: settings changes reflect immediately on display page
 
-Commit #23
+Commit #24
