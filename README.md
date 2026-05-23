@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add loading spinner
+## style: add purple gradient background
 
-Commit #18
+Commit #19
