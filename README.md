@@ -1,5 +1,5 @@
 ﻿# App06-Blazor-Notification-Service
 
-## feat: add Compact and Detailed style selector
+## feat: add NotificationDisplay page
 
-Commit #12
+Commit #13
